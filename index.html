@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="夏納青の活動記載ページです">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>夏納青</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" media="print" href="css/print.css">
+  <link rel="stylesheet" href="css/hamburger.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-9/css/5-2-9.css">
+
+</head>
+
+<body>
+  <div id="container">
+
+    <div class="recipe">
+      <header>
+        <div class="hamburger_haiti">
+          <p class="namefont">夏納青</p>
+        </div>
+        <div class="hamburger-menu">
+          <input type="checkbox" id="menu-btn-check">
+          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+          <!--ここからメニュー-->
+          <div class="menu-content">
+            <ul>
+              <li>
+                <a href="#">メニューリンク1</a>
+              </li>
+              <li>
+                <a href="#">メニューリンク2</a>
+              </li>
+              <li>
+                <a href="#">メニューリンク3</a>
+              </li>
+            </ul>
+          </div>
+          <!--ここまでメニュー-->
+        </div>
+
+        <!--CSS-->
+        <style type="text/css">
+          body {
+            background-color: white;
+          }
+
+          .menu-btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            height: 60px;
+            width: 60px;
+            justify-content: center;
+            align-items: center;
+            z-index: 90;
+            /* ボタンの全体の色 */
+            background-color: yellow;
+          }
+
+          .menu-btn span,
+          .menu-btn span:before,
+          .menu-btn span:after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 25px;
+            border-radius: 3px;
+            /* ボタンの線の色 */
+            background-color: black;
+            position: absolute;
+          }
+
+          .menu-btn span:before {
+            bottom: 8px;
+          }
+
+          .menu-btn span:after {
+            top: 8px;
+          }
+
+          #menu-btn-check:checked~.menu-btn span {
+            background-color: rgba(255, 255, 255, 0);
+            /*メニューオープン時は真ん中の線を透明にする*/
+          }
+
+          #menu-btn-check:checked~.menu-btn span::before {
+            bottom: 0;
+            transform: rotate(45deg);
+          }
+
+          #menu-btn-check:checked~.menu-btn span::after {
+            top: 0;
+            transform: rotate(-45deg);
+          }
+
+          #menu-btn-check {
+            display: none;
+          }
+        </style>
+        <!--CSS-->
+
+
+
+        <!-- <div class="openbtn9"><div class="openbtn-area"><span></span><span></span><span></span></div></div> -->
+      </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="photo">
+        <!-- <p>artwork</p> -->
+        <img src="img/5.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+        <img src="img/11.jpg" alt="">
+        <img src="img/2.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="footer__copyright">©︎Kanou Ao</p>
+    <ul class="footer__link">
+      <li><a href="https://twitter.com/kanouao_room" target="_blank">Twitter</a></li>
+      <li><a href="https://instagram.com/kanouao_room" target="_blank">Instagram</a></li>
+    </ul>
+  </footer>
+  <script type="text/javascript" src="js/hamburger.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-2-9/js/5-2-9.js"></script>
+</body>
+
+</html>
